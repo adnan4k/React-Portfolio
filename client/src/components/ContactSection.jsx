@@ -5,7 +5,6 @@ import {
   MapPin,
   Phone,
   Send,
-  Twitter,
   Github,
   Loader2
 } from "lucide-react";
@@ -94,7 +93,7 @@ export const ContactSection = () => {
     } catch (error) {
       toast({
         title: "Oops! Something went wrong",
-        description: "Please try again or email me directly at codewithkinu@gmail.com",
+        description: "Please try again or email me directly at fayomuhe5@gmail.com",
         variant: "destructive"
       });
     } finally {
@@ -133,10 +132,10 @@ export const ContactSection = () => {
                 <div>
                   <p className="text-xs sm:text-sm text-muted-foreground">Email</p>
                   <a
-                    href="mailto:codewithkinu@gmail.com"
+                    href="mailto:fayomuhe5@gmail.com"
                     className="text-sm sm:text-base font-medium hover:text-primary transition-colors"
                   >
-                    codewithkinu@gmail.com
+                    fayomuhe5@gmail.com
                   </a>
                 </div>
               </div>
@@ -176,17 +175,12 @@ export const ContactSection = () => {
                   {
                     icon: Linkedin,
                     label: "LinkedIn",
-                    url: "https://www.linkedin.com/in/codewithkinu",
-                  },
-                  {
-                    icon: Twitter,
-                    label: "Twitter",
-                    url: "#",
+                    url: "https://www.linkedin.com/in/faysal-mohammed-663717230",
                   },
                   {
                     icon: Github,
                     label: "GitHub",
-                    url: "https://github.com/Sahilmd01",
+                    url: "https://github.com/adnan4k",
                   },
                   {
                     icon: Instagram,

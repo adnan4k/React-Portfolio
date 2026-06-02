@@ -9,10 +9,10 @@ export const HeroSection = () => {
   const [displayedCode, setDisplayedCode] = useState("");
 
   const codeSnippets = [
-    "import { FullStackDeveloper } from 'sahil.dev';",
+    "import { FullStackDeveloper } from 'faysal.dev';",
     "",
     "const developer = new FullStackDeveloper({",
-    "  name: 'Sahil',",
+    "  name: 'Faysal Mohammed',",
     "  stack: ['React', 'Next.js', 'Node.js', 'TypeScript'],",
     "  focus: 'Building scalable web applications',",
     "  status: 'Open to new opportunities'",

@@ -2,7 +2,6 @@ import {
   ArrowUp,
   Linkedin,
   Instagram,
-  Youtube,
   Github,
   Mail,
   Phone,
@@ -14,10 +13,9 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/codewithkinu", label: "LinkedIn" },
+    { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/faysal-mohammed-663717230", label: "LinkedIn" },
     { icon: <Instagram size={18} />, href: "https://instagram.com/dubbinut", label: "Instagram" },
-    { icon: <Youtube size={18} />, href: "https://youtube.com/@codewithkinu", label: "YouTube" },
-    { icon: <Github size={18} />, href: "https://github.com/sahilmd01", label: "GitHub" },
+    { icon: <Github size={18} />, href: "https://github.com/adnan4k", label: "GitHub" },
   ];
 
   const quickLinks = [
@@ -28,7 +26,7 @@ export const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: <Mail size={16} />, text: "codewithkinu@gmail.com", href: "mailto:codewithkinu@gmail.com.com" },
+    { icon: <Mail size={16} />, text: "fayomuhe5@gmail.com", href: "mailto:fayomuhe5@gmail.com" },
     { icon: <Phone size={16} />, text: "+91 9315145594", href: "tel:+919315145594" },
   ];
 
@@ -68,7 +66,7 @@ export const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Branding */}
             <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">SAHIL</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">FAYSAL</h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Digital designer & developer creating meaningful experiences.
               </p>
@@ -169,7 +167,7 @@ export const Footer = () => {
             viewport={{ once: true }}
           >
             <div>
-              <p>© {currentYear} Sahil. All rights reserved.</p>
+              <p>© {currentYear} Faysal Mohammed. All rights reserved.</p>
             </div>
             
             <div className="flex items-center space-x-6">

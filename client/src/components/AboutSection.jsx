@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Briefcase, Code, User, Download, Calendar, Sparkles, Target, Github, Linkedin, Twitter, Mail, Star } from 'lucide-react';
+import { Briefcase, Code, User, Download, Calendar, Sparkles, Target, Github, Linkedin, Mail, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const AboutSection = () => {
@@ -23,10 +23,9 @@ export const AboutSection = () => {
   const features = ["Full-stack expertise", "Clean, maintainable code", "Performance optimization", "Agile methodology", "24/7 support", "Timely delivery"];
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, href: "https://www.github.com/sahilmd01" },
-    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/codewithkinu" },
-    { icon: <Twitter className="h-5 w-5" />, href: "#" },
-    { icon: <Mail className="h-5 w-5" />, href: "mailto:sahilmd.dev@gmail.com" }
+    { icon: <Github className="h-5 w-5" />, href: "https://www.github.com/adnan4k" },
+    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/faysal-mohammed-663717230" },
+    { icon: <Mail className="h-5 w-5" />, href: "mailto:fayomuhe5@gmail.com" }
   ];
 
   const tabContent = {
@@ -49,8 +48,8 @@ export const AboutSection = () => {
   // Programmatic download function
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Sahil-resume.pdf'; // Must be in public folder
-    link.download = 'Sahil-resume.pdf';
+    link.href = '/Faysal_Mohammed-resume.pdf'; // Must be in public folder
+    link.download = 'Faysal_Mohammed-resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -102,7 +101,7 @@ export const AboutSection = () => {
                   {/* Profile Image */}
                   <div className="relative flex-shrink-0">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl transition-all duration-500 group-hover:border-primary/40 group-hover:scale-105 md:group-hover:scale-110 relative">
-                      <img src="/profile-logo.png" alt="MD Sahil" className="w-full h-full object-cover" />
+                      <img src="/profile-logo.png" alt="Faysal Mohammed" className="w-full h-full object-cover" />
                       <div className="absolute -bottom-2 -right-2 w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full border-4 border-background flex items-center justify-center">
                         <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse" />
                       </div>
@@ -111,7 +110,7 @@ export const AboutSection = () => {
 
                   {/* Achievements */}
                   <div className="flex-1 text-center md:text-left">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">MD Sahil</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">Faysal Mohammed</h2>
                     <p className="text-primary text-base sm:text-lg font-semibold mb-3 sm:mb-4">Full Stack Developer</p>
                     <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
                       {achievements.map((achievement, index) => (
