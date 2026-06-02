@@ -4,7 +4,6 @@ import {
   User,
   Code,
   Briefcase,
-  MessageSquare,
   Mail,
   BookOpen,
   Sun,
@@ -23,7 +22,7 @@ const navItems = [
   { name: "About", href: "#about", icon: User },
   { name: "Skills", href: "#skills", icon: Code },
   { name: "Projects", href: "#projects", icon: Briefcase },
-  { name: "Testimonials", href: "#testimonials", icon: MessageSquare },
+  { name: "Experience", href: "#experience", icon: Briefcase },
   { name: "Contact", href: "#contact", icon: Mail },
   { name: "Blog", href: "https://blogni.vercel.app", icon: BookOpen },
 ];
@@ -227,15 +226,15 @@ export const Navbar = () => {
         </motion.button>
       </motion.div>
 
-      {/* Bottom Navbar */}
-      <motion.div
+      {/* Top Navbar */}
+      <motion.nav
         className={cn(
-          "fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50",
+          "sticky top-0 z-50 w-full flex justify-center py-3",
           "transition-transform duration-300 ease-in-out",
-          showNavbar ? "translate-y-0" : "translate-y-full"
+          showNavbar ? "translate-y-0" : "-translate-y-full"
         )}
         style={{ willChange: "transform" }}
-        initial={{ y: 20, opacity: 0 }}
+        initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
@@ -262,7 +261,7 @@ export const Navbar = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </motion.nav>
     </>
   );
 };
