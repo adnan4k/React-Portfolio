@@ -4,6 +4,20 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 
 const projects = [
   {
+    id: 9,
+    title: "Evtopia",
+    category: "Electric Mobility",
+    description: "A modern EV platform that enables users to discover electric vehicles, access EV services, and support the adoption of sustainable transportation across East Africa.",
+    image: "/projects/project9.png",
+    tags: ["Marketplace", "EV Platform", "Web App", "Sustainable Transport"],
+    demoUrl: "https://evtopia.co/",
+    githubUrl: "#",
+    featured: true,
+    accentColor: "from-green-500 to-lime-600",
+    status: "Live",
+    highlights: ["EV marketplace", "Conversion services", "Maintenance solutions", "Sustainable transport"]
+  },
+  {
     id: 8,
     title: "GenAxis",
     category: "AI SaaS ",
@@ -128,7 +142,8 @@ const categoryColors = {
   "Artificial Intelligence": "from-amber-500/20 to-orange-600/20 text-amber-600 border-amber-500/30",
   "FinTech": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30",
   "Food Tech": "from-violet-500/20 to-purple-600/20 text-violet-600 border-violet-500/30",
-  "HR Tech": "from-orange-500/20 to-red-600/20 text-orange-600 border-orange-500/30"
+  "HR Tech": "from-orange-500/20 to-red-600/20 text-orange-600 border-orange-500/30",
+  "Electric Mobility": "from-green-500/20 to-lime-600/20 text-green-600 border-green-500/30"
 };
 
 export const ProjectsSection = () => {
@@ -321,14 +336,16 @@ export const ProjectsSection = () => {
                       animate={{ opacity: hoveredProject === project.id ? 1 : 0 }}
                     >
                       {/* Video Play Button */}
-                      <motion.button
-                        onClick={() => handleVideoPlay(project)}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full backdrop-blur-sm border bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300"
-                      >
-                        <Play size={20} />
-                      </motion.button>
+                      {project.video && (
+                        <motion.button
+                          onClick={() => handleVideoPlay(project)}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="p-3 rounded-full backdrop-blur-sm border bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300"
+                        >
+                          <Play size={20} />
+                        </motion.button>
+                      )}
                       
                       {/* Code Button */}
                       <motion.a
